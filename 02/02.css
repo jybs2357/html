@@ -1,29 +1,165 @@
-header {
+* {
+    padding: 0px;
+    margin: 0px;
+    
+    box-sizing: border-box;
+  }
+  
+  header, main, footer {
+    width: 80%;
+    margin-left: 10%; 
+  }
+  
+  header, main {
     background-color: aliceblue;
-}
-
-main {
-    background-color: aliceblue;
-}
-
-footer {
+  }
+  
+  main, footer {
+    padding: 20px;
+  }
+  
+  footer {
     background-color: black;
+    color: white; 
+    font-size: small; 
+  }
+  
+  footer > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header, header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header {
+    height: 80px;
+    padding: 20px;
+  }
+  
+  /* nav > ul { */
+  /* header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } */
+  
+  ul {
+    list-style: none;
+  }
+  
+  .menuLi {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 45px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: royalblue;
     color: white;
-}
-
-#menu > li {
-    background-color: blue;
+  }
+  
+  .menuLi:hover {
+    background-color: chocolate; 
+  }
+  
+  a {
+    text-decoration: none;
     color: white;
-}
-
-#menu > a {
-    color: white;
-}
-
-section {
+  }
+  
+  li img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  article {
+    padding: 60px; 
+  }
+  
+  article > p {
+    padding: 20px;
+  }
+  
+  p > span {
+    color: brown;
+    font-weight: bold;
+  }
+  
+  h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 20px;
+  }
+   
+  section {
+    margin: 20px ;
+    padding: 20px 40px;
     background-color: white;
-}
-
-.s1 {
-    background-color: aqua;
-}
+    border-radius: 15px;
+  }
+  
+  h2 {
+    padding-bottom: 20px;
+  }
+  
+  .secDiv {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .secDiv > div {
+    width: 20%;
+  }
+  
+  .secDiv img {
+    width: 80%;
+    border-radius: 50%;
+  }
+  
+  .secDiv > p {
+    width: 80%;
+    font-size: medium;
+    color: dimgray ;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width : 1024px) {
+    header, main, footer {
+      width: 100%; 
+      margin-left: 0px; 
+    }
+  }
+  
+  @media screen and (max-width : 768px) {
+    header, header ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      
+      width: 100%;
+    }
+    header {
+      height: auto;
+      padding: 20px;
+    }
+  
+    header li{
+      width: 90%;
+      margin-bottom: 5px;
+    }
+  }
