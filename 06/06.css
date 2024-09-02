@@ -1,5 +1,5 @@
-h2 > span {
-    color: brown;
-    font-weight: bold;
-    padding-left: 10px;
+.secDice {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
 }
