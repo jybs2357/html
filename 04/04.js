@@ -7,15 +7,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const msg = document.querySelector("#msg");
     //버튼 이벤트 달기
     bt1.addEventListener("click", ()=>{
-        alert(bt1.innerHTML)
+        alert(bt1.innerHTML);
     });
 
     bt2.addEventListener("click", ()=>{
-        alert(bt2.textContent)
+        alert(bt2.textContent);
     });
 
     bt3.addEventListener("click", ()=>{
-        alert(bt3.textContent)
+        alert(bt3.textContent);
     });
 
     bt3.addEventListener("click", ()=>{

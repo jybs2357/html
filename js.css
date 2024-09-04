@@ -10,7 +10,14 @@ header , main {
     
     display: flex;
 }
-  
+main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 450px;
+    border: 1px dotted gray;
+}  
 header {
     height: 80px;
     background-color: darkblue;
@@ -41,12 +48,4 @@ button {
 button:hover {
     background-color: red;
     font-weight: bold;
-}
-
-section {
-    margin: 30px;
-}
-
-section > div {
-    height: 100px;
 }

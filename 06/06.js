@@ -1,18 +1,29 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-    const bt1 = document.querySelector("button");
-    const bt2 = document.querySelector("button");
-    const bt3 = document.querySelector("button");
-    const bt4 = document.querySelector("button");
-    const bt5 = document.querySelector("button");
-    const bt6 = document.querySelector("button");
-  
-    const img = document.querySelector("#msg1 > img");
-    const img = document.querySelector("#msg2 > img");
+    //이미지 가져오기
+    const imgs = document.querySelectorAll(".dice > img");
 
-    bt.addEventListener("click", ()=>{
-        let n = Math.floor(Math.random() * 6) + 1;
+    const bts = document.querySelectorAll("button");
 
-        img.setAttribute("src", `../img/${n}.png`);
-        img.setAttribute("alt", `${n}.png`);
-    });
+    const msg = document.querySelectorAll("#msg");
+
+    for (let bt of bts) {
+        bt.addEventListener("click",()=>{
+            // 컴퓨터 랜덤수
+            let comN = Math.floor(Math.random() * 6) + 1;
+            
+            imgs[0].setAttribute("src", `../img/${comN}.png`);
+
+            console.log(bt.textContent.charAt(0));
+            let userN = parseInt(bt.textContent.charAt(0));
+            imgs[1].setAttribute("src", `../img/${userN}.png`);
+
+            if (comN === userN) {
+                msg.textContent = "AlphaGo resigns";
+            }
+            else {
+                msg.textContent = "실패란? 다시 하라는거야.";
+            }
+        });
+    }
+
 });
