@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  type="text/css" href="../js.css">
     <link rel="stylesheet"  type="text/css" href="./08.css">
-    <title>JS활용</title>
+    <title>JS기초</title>
     <script src='./08.js'></script>
 </head>
 
@@ -16,19 +16,22 @@
             <a href='../index.html'><img src='../img/home.png' id='home'></a>
         </div>
     </header>
-    <main>
-        <section>
-            <div class = "dice">
-                <h2>업다운게임</h2>
-                <img src = "../img/what.png">
-            </div>
-        </section>
-        <section>
-            <div class="textBox">
-                <input type = "number" id="txt" name="txt">
-                <button>입력</button>
-            </div>
-        </section>
-    </main>
+    <form>
+        <main>
+            <section class="sec">
+                <div class = "row">
+                    <img src = "../img/what.png">
+                </div>
+                <div class="row">
+                    <div class="col1">
+                        <input type='number' id='txt1' name='txtName1' placeholder='숫자를 입력하세요.' />
+                    </div>
+                    <div class="col2">
+                        <button id ="bt1">확인</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </form>
 </body>
 </html>

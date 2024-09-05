@@ -1,28 +1,29 @@
-.secDice {
+.sec, .row {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec {
+    margin: 2px;
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
 }
 
-.secDice > button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5px ;
+.row {
+    width: 80%;
+    flex-direction: row;
 }
 
-.dice {
-    padding: 10px;
+#txt1 {
+    height: 40px;
+    margin 
 }
 
-.dice > h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 10px;
+#bt1 {
+    width: auto;
+}
 
+input {
+    width: 40%;
 }
