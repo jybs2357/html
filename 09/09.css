@@ -4,13 +4,18 @@
     align-items: center;
 
     width: 100%;
-    background-color: blanchedalmond;
+    background-color: hotpink;
 }
 
 .sec > input {
     width: 40%;
     height: 30px;
     margin: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
 }
 
 #txt2 {

@@ -1,0 +1,61 @@
+.sec {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.div1 {
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 0px 5px;
+}
+
+
+span {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: aliceblue;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.sp0 {
+    background-color: brown;
+}
+
+.sp1 {
+    background-color: chocolate;
+}
+
+.sp2 {
+    background-color: darkgray;
+}
+
+.sp3 {
+    background-color: deepskyblue;
+}
+
+.sp4 {
+    background-color: aquamarine;
+}
+
+.sp5 {
+    background-color: rgb(81, 210, 30);
+}
+
+.divplus {
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+}
