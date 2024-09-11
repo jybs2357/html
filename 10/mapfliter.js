@@ -19,8 +19,12 @@
 // for (let item of arr) {
 //     console.log(`${item} : ${item % 2 == 0? "짝" : "홀"}`);
 // }
-// //구조 분해란?
 
+const arr = [1, 2, 3, 4, 5];
+console.log('forEach')
+arr.forEach((item, i) => {
+  console.log(`${parseInt(i)+1}번째 : ${item} : ${item % 2 == 0 ? "짝" : "홀"}`);
+}) ;
 
 // arr.push(6);
 // console.log("arr push : ", arr);

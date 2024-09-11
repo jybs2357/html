@@ -15,6 +15,12 @@
     margin: 0px 5px;
 }
 
+.divplus > span {
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
 
 span {
     width: 60px;
@@ -28,6 +34,8 @@ span {
     background-color: aliceblue;
     font-size: larger;
     font-weight: bold;
+
+    color:azure;
 }
 
 .sp0 {
@@ -48,14 +56,4 @@ span {
 
 .sp4 {
     background-color: aquamarine;
-}
-
-.sp5 {
-    background-color: rgb(81, 210, 30);
-}
-
-.divplus {
-    color: black;
-    font-size: xx-large;
-    font-weight: bold;
 }

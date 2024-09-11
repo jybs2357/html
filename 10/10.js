@@ -1,15 +1,15 @@
-const disp = ( dsp ) => {
+const disp = ( divNum, divplus,divBonus, dsp ) => {
     divNum.style.display = dsp;
-    divplus.style.diplay = dsp;
-    divBonus.style.diplay = dsp;
-});
+    divplus.style.display = dsp;
+    divBonus.style.display = dsp;
+}
 
 document.addEventListener("DOMContentLoaded", ()=>{
     //요소 가져오기
     const divNum = document.querySelector("#divNum");
     const divplus = document.querySelector(".divplus");
     const divBonus = document.querySelector("#divBonus")
-    const bt = document.querySelector("section > button");
+    const bt = document.querySelector(".sec > button");
 
     //요소 숨기기
     disp(divNum, divplus, divBonus, "none");
@@ -32,18 +32,18 @@ document.addEventListener("DOMContentLoaded", ()=>{
         console.log(arrBonus);
 
         arr = arr.map( item => 
-                        `<span class="sp${Math.floor(item/10)}">${item}</span>`)
+                        `<span class="sp${Math.floor(item/10)}">${item}</span>`);
         arr = arr.join("");
         divNum.innerHTML = arr;
         console.log(arr);
 
-        arrBonus = arrBonus.map(item => {
-                                `<span class='sp${Math.floor(item/10)}'>${item}</span>`);});
+        arrBonus = arrBonus.map(item =>
+                                `<span class="sp${Math.floor(item/10)}">${item}</span>`);
 
-        
         arrBonus = arrBonus.join("");
         divBonus.innerHTML = arrBonus;
 
+        //요소 숨기기
         disp(divNum, divplus, divBonus, "block");
         
     });
