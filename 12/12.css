@@ -5,13 +5,8 @@
     justify-content: start;
     align-items: center;
 
-    height: 80vh;
+    height: 500px;
 }
-
-li {
-    list-style-type: none;
-}
-
 
 .sec, .divDit {
     display: flex;
@@ -33,29 +28,83 @@ li {
     border: 1px dotted gary;
 }
 
-input[type=date] {
+input[type=date], select, fieldset {
     width: 40%;
     height: 30px;
+    margin-left: 5px;
+}
+
+fieldset {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+.sec > ul {
+    list-style: none;
+    width: 80%;
+
+    font-size: medium;
+}
+
+.mvli {
+    width: 100%;
+    height: 40px;
+  
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  
+    margin: 0px 2px;
+  }
+  
+.mvli:hover {
+    background-color: aliceblue;
+    border-bottom: 1px solid blue;
 }
 
 .rank {
-    width: 40%;
-    height: 40%;
-    font-style: italic;
-    font-size: large;
-    font-weight: bold;
-}
+    width: 30px;
+    height: 30px;
 
-.movieNm {
-    font-style: oblique;
-    font-size: medium;
-    font-weight: bold;
-}
-
-.movieNm:hover {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     background-color: blue;
+    color: white;
+  
+    border-radius: 10%;
+    margin-right: 10px;
 }
 
 .rank:hover {
     background-color: brown;
+}
+
+.movieNm {
+    width: 60%;
+}
+
+.openDt {
+    width: 20%;
+}
+
+.audiInten {
+    width: 10%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.spRed {
+    color: red;
+}
+
+.spBlue {
+    color: blue;
 }
