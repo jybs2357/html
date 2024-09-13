@@ -3,38 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  type="text/css" href="../js.css">
-    <link rel="stylesheet"  type="text/css" href="./13.css">
-    <title>JS기초</title>
-    <script src='./13.js'></script>
+
+    <title> PNU KDT 8기 </title>
+    <link rel="stylesheet" type="text/css" href="../js.css">
+    <link rel="stylesheet" type="text/css" href="./13.css">
+    <script src="./13.js"> </script>
 </head>
 <body>
     <header>
         <h1>폭탄 찾기 게임</h1>
-        <div>
-            <a href="../index.html"><img src="../img/pnu.jpg" id="home"></a>
-        </div>
+        <a href="../index.html"><img src="../img/pnu.jpg" id="home"></a>
     </header>
-    <form>
-        <main id="boxofficeMain">
-            <section class="sec">
-              <div class="row">
-                <div class="col" id="box1">1</div>
-                <div class="col" id="box2">2</div>
-                <div class="col" id="box3">3</div>
-              </div>
-              <div class="row">
-                <div class="col" id="box4">4</div>
-                <div class="col" id="box5">5</div>
-                <div class="col" id="box6">6</div>
-              </div>
-              <div class="row">
-                <div class="col" id="box7">7</div>
-                <div class="col" id="box8">8</div>
-                <div class="col" id="box9">9</div>
-              </div>
-            </section>
-        </main>
-    </form>
+    <main>
+        <!-- 3x3박스영역 -->
+        <section class="secbox">
+            <div class="row">
+                <div class="col" id="box1"> 1 </div>
+                <div class="col" id="box2"> 2 </div>
+                <div class="col" id="box3"> 3 </div>
+            </div>
+
+            <div class="row">
+                <div class="col" id="box4"> 4 </div>
+                <div class="col" id="box5"> 5 </div>
+                <div class="col" id="box6"> 6 </div>
+            </div>
+
+            <div class="row">
+                <div class="col" id="box7"> 7 </div>
+                <div class="col" id="box8"> 8 </div>
+                <div class="col" id="box9"> 9 </div>
+            </div>
+            
+        </section>
+
+        <!-- 버튼 영역 -->
+        <section class="sec">
+            <button>폭탄 섞기</button>
+        </section>
+
+        <!-- 메세지 영역 -->
+        <section class="sec">
+            <div id="msg"> </div>
+        </section>
+    </main>
 </body>
 </html>
