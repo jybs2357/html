@@ -13,6 +13,10 @@
     background-color: aliceblue;
   }
   
+  header img {
+    height: 60px;
+  }
+
   main, footer {
     padding: 20px;
   }
@@ -37,6 +41,17 @@
     align-items: center;
   }
   
+  header {
+    height: 80px;
+    background-color: darkblue;
+    color: white;
+  
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
   header {
     height: 80px;
     padding: 20px;
