@@ -3,13 +3,13 @@
   margin: 0px;
 }
 
-main {
-  width: 60%;
-  margin-left: 20%;
+header , main {
+  width: 80%;
+  margin-left: 10%;
 }
 
 header {
-  height: 80px;
+  height: 40px;
   background-color: darkblue;
   color: white;
   display: flex;
@@ -29,15 +29,15 @@ article {
 }
 
 article ul {
-  width: 80%;
+  width: 60%;
   background-color: beige;
-  margin-top: 20px;
+  margin-top: 40px;
   list-style: none;
 }
 article li {
   display: flex;
   align-items: center;
-  height: 20px;
+  height: 30px;
   border: 1px dotted gray;
   padding: 10px;
 }
@@ -56,14 +56,4 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-section > div {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px dotted gray;
-  padding: 20px;
-  margin: 10px;
 }

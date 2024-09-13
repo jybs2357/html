@@ -8,14 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const msg = document.querySelector("#msg");
 
     bt.addEventListener("click", (e) => {
-        e.preventDefalut();
-        if (!isShuffle) {
-            isShuffle = true;
-        
-        //배열 섞기
-        arr.sort(() => Math.random() - 0.5);
-        console.log(arr)
-        bt.innerHTML = "게임중 ..."
-        }
     });
+
+    for (let col of cols) {
+        col.addEventListener("click", () => {
+            let idx = col.getAttribute("id").slice(-1) - 1;
+            console.log(idx, arr[idx])
+
+        });
+    }
 });
